@@ -38,4 +38,57 @@ The pipeline is built to:
 
 ---
 
-## 📂 Project Structure
+
+---
+
+## 🖥️ How to Run (Google Colab)
+1. Open the notebook in **Google Colab**.
+2. Upload your **training dataset (CSV)** when prompted.
+   - Ensure it contains a **binary target column** (0 = low risk, 1 = high risk).
+3. Enter the **target column name** when asked.
+4. The pipeline trains automatically and prints evaluation metrics.
+5. Upload a **new dataset (without target column)** for prediction.
+6. Risk scores will be displayed and saved as `risk_scores_output.csv`.
+
+---
+
+## 📊 Example Output
+Classification Report:
+precision    recall  f1-score   support
+0       0.92      0.89      0.91       100
+1       0.88      0.91      0.89        80
+
+Test ROC-AUC: 0.9456
+
+Predicted Risk Scores (first 5 patients):
+risk_score
+0    0.812345
+1    0.102345
+2    0.567890
+3    0.934567
+4    0.223456
+
+
+---
+
+## ⚠️ Disclaimer
+This project is intended for **educational and research use only**.  
+It is **not a medical device** and should not be used for clinical decision-making.  
+Always consult qualified healthcare professionals for medical advice.
+
+---
+
+## 📈 Future Enhancements
+- Add ROC curve and confusion matrix visualizations.
+- Integrate SHAP for feature importance explanations.
+- Support multi-class risk categories.
+- Deploy as a simple web app (Streamlit/Flask).
+
+---
+
+## 👨‍💻 Contributors
+- **Mohammad Razeen Iqbal** – Strategic AI  Product Manager & Systems Architect
+
+
+---
+
